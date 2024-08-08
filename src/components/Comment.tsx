@@ -9,7 +9,7 @@ export default function Comment(props:any) {
     <div>
       <div className="d-flex gap-2 my-2">
           <img
-            src="/profileImages/lisa.jpg"
+            src={props.userImagePath}
             width="48"
             height="48"
             className="rounded-circle"
@@ -20,13 +20,13 @@ export default function Comment(props:any) {
             style={{ backgroundColor: "#3A3B3C" }}
           >
             <span className="fw-semibold" style={{ color: "#E4E6EB" }}>
-              Lisa
+              {props.username}
             </span>
             <br />
-            <span style={{ color: "#E4E6EB" }}>จริงค่า</span>
+            <span style={{ color: "#E4E6EB" }}>{props.commentText}</span>
             <div className="d-flex align-items-center gap-1">
               <img src="/like.svg" width={20}></img>
-              <span style={{ color: "#B0B3B8" }}>999 คน</span>
+              <span style={{ color: "#B0B3B8" }}>{props.likeNum}</span>
             </div>
           </div>
         </div>
