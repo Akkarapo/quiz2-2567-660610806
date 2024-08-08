@@ -1,8 +1,8 @@
 "use client";
-
+import React from "react";
 import PostOwnner from "@/components/PostOwnner";
 import Comment from "@/components/Comment";
-//import Reply from "@/components/Reply";
+import Reply from "@/components/Reply";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -24,7 +24,6 @@ export default function Home() {
           like="100 คน"/>
 
         {/* Comment Example */}
-
 
         <div className="d-flex gap-2 my-2">
           <img
@@ -51,7 +50,7 @@ export default function Home() {
         </div>
 
         {/* Reply Example */}
-        <PostOwnner 
+        <Reply
           userImagePath="/profileImages/puppy.jpg"
           username="หมาน้อย" 
           replyText="จริงค้าบบบบบบบบ" 
