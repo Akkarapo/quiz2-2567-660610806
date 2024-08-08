@@ -17,30 +17,11 @@ export default function Home() {
         className="mx-auto p-3 rounded rounded-3 shadow-sm"
       >
         {/* Post Owner Example*/}
-        <div className="vstack gap-3">
-          <div className="d-flex align-items-center gap-3">
-            <img
-              src="/profileImages/ProfileAkkarapong.jpg"
-              width="48"
-              height="48"
-              className="rounded-circle"
-              style={{ objectFit: "cover" }}
-            />
-            <span className="fw-semibold fs-5 text-white">
-              Oakkharaphong Garpanya 660610806
-            </span>
-          </div>
-
-          <span className="text-white">
-            ไม่ค่อยเข้าใจเรื่อง React เลยคับ แงงงงงงงง #261207
-          </span>
-
-          <div className="d-flex align-items-center gap-1">
-            <img src="/like.svg" width={20}></img>
-            <span style={{ color: "#B0B3B8" }}>100 คน</span>
-          </div>
-          <hr className="m-0 border" />
-        </div>
+        <PostOwnner 
+          fullName="Oakkharaphong Garpanya" 
+          studentId="660610806" 
+          content="ไม่ค่อยเข้าใจเรื่อง React เลยคับ แงงงงงงงง #261207" 
+          like="100 คน"/>
 
         {/* Comment Example */}
         <div className="d-flex gap-2 my-2">
