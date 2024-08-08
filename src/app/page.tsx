@@ -1,5 +1,10 @@
 "use client";
 
+import PostOwnner from "@/components/PostOwnner";
+import Comment from "@/components/Comment";
+//import Reply from "@/components/Reply";
+import { useEffect, useState } from "react";
+
 export default function Home() {
   return (
     <div
